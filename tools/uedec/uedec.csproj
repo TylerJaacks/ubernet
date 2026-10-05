@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);CS0618;CS1591;CS8632;CS0162;CS0168;CS0219;CS0414;CS0649;CS0169;CS1998;CS0067</NoWarn>
+    <ImportDirectoryBuildProps>false</ImportDirectoryBuildProps>
+    <ImportDirectoryBuildTargets>false</ImportDirectoryBuildTargets>
+    <ImportDirectoryPackagesProps>false</ImportDirectoryPackagesProps>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>$(DefineConstants);DECOMPILE;BINARYMETADATA;UE1;UE2;UE3;UE4;VENGEANCE;SWAT4;UNREAL2;INFINITYBLADE;BORDERLANDS2;GOW2;APB;SPECIALFORCE2;XIII;SINGULARITY;THIEF_DS;DEUSEX_IW;BORDERLANDS;MIRRORSEDGE;BIOSHOCK;HAWKEN;UT;DISHONORED;REMEMBERME;ALPHAPROTOCOL;VANGUARD;TERA;MKKE;TRANSFORMERS;XCOM2;DD2;DCUO;AA2;SPELLBORN;BATMAN;MOH;ROCKETLEAGUE;DNF;LSGAME;UNDYING;HP;DEVASTATION;BATTLEBORN;SPLINTERCELLX;AHIT;GIGANTIC;ENDWAR;SG1;MASS_EFFECT;MOV;MIDWAY;SHADOWSTRIKE;R6;HUXLEY;RM;LEAD;BULLETSTORM;ADVENT;SWRepublicCommando;GOWUE;SA2;ACM</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../uelib/src/**/*.cs" Exclude="../uelib/src/obj/**;../uelib/src/bin/**" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+</Project>

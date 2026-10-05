@@ -1,0 +1,10 @@
+services:
+  ubernet-stub:
+    build: .
+    container_name: ubernet-stub
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config:/config:ro     # edit rules.json live, no restart needed
+      - ./data:/data            # requests.jsonl lands here

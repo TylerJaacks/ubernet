@@ -1,0 +1,7 @@
+[
+  {
+    "_note": "Overrides go here and are checked before the built-in handlers. Example (disabled by the impossible match): force UserInfo to report a developer account.",
+    "match": "^NEVER /GC/UserInfo",
+    "body": { "IsDeveloper": true }
+  }
+]
